@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop! Movies Platinum</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="nav-area">
+        <a class="brand" href="">
+          <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-camera-reels" viewBox="0 0 16 16">
+              <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+              <path
+                d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
+              <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg>
+            Pop! Movies
+          </h1>
+        </a>
+
+        <svg class="nav-burger" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+
+        <div class="nav-menu">
+          <a class="nav-link" href="./Kuis10.html">Home</a>
+          <a class="nav-link" href="#about" id="aboutLink">About</a>
+          <a class="nav-link" href="httos://github.com/andikatuluspangestu" id="contactLink">Github</a>
+        </div>
+
+        <div class="nav-menu-dekstop">
+          <input type="text" id="search-input" placeholder="Search or CTRL + K">
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="loading-overlay" style="display: none;">
+      <div id="loading">
+        <span src="assets/image/loading.gif" alt="Data sedang dimuat...">
+      </div>
+    </div>
+
+    <!-- List Movies -->
+    <content id="content-main">
+      <section id="popular-movies">
+        <h2>List of Popular Movies</h2>
+        <hr>
+        <div class="row" id="movie-list">
+        </div>
+      </section>
+    </content>
+
+    <!-- Modal Detail -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="detailMovies"></p>
+      </div>
+    </div>
+
+    <!-- Modal About -->
+    <div class="modal" id="aboutModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p>
+          Pop! Movies is a website that provides information about popular movies. This website is created for educational purposes only. All data is fetched from <a
+            href="https://www.themoviedb.org/">The Movie Database (TMDb)</a> API.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="pagination"></div>
+
+  <footer>
+    <p>
+      <strong>
+        &copy; 2023 Pop! Movies - Build with <span style="color: red;">❤</span> by Andika Tulus Pangestu
+      </strong>
+      <br>
+      <small>
+        This website is created for educational purposes only. All data is fetched from <a
+          href="https://www.themoviedb.org/">The Movie Database (TMDb)</a> API.
+      </small>
+    </p>
+  </footer>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

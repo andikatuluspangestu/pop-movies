@@ -1,6 +1,9 @@
 ## POP! Movies Web App
 This is a web app that allows users to search for movies and view details about them. The app uses the [The Movie Database API](https://www.themoviedb.org/documentation/api) to fetch movie data. The app is built using the Native HTML, CSS, and JavaScript. The app is not responsive and is best viewed on a desktop.
 
+## Preview
+![preview-app](https://github.com/andikatuluspangestu/pop-movies/blob/main/assets/image/preview.jpg?raw=true)
+
 ## Features
 - Search for movies by title
 - View details about a movie
